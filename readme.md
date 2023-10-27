@@ -18,4 +18,4 @@ Create a library that can shorten long URLs, similar to services like [https://g
 
 Remember to focus on functionality, and ensure that the library provides robust URL shortening capabilities.
 
-(Source)[https://www.tddbuddy.com/katas/url-shortener.html]
+[Source](https://www.tddbuddy.com/katas/url-shortener.html)
