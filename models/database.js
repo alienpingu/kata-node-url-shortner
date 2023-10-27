@@ -1,22 +1,16 @@
 const Link = require("../models/Link");
-
 class Database {
     constructor() {
         this.list = []
     }
-
     push = (long_url) => {
         let link = new Link(long_url);
         let checkLink =  this.list.find(l => l.long_url === long_url);
         if (checkLink) {
             return checkLink.short_path;
         } else {
-            this.list.push({
-                "short_path": link.short_path,
-                "long_url": link.long_url,
-                "view_counter": link.view_counter,
-                "history": link.history
-            });
+            const { short_path, long_url, view_counter, history } = link;
+            this.list.push({ short_path, long_url, view_counter, history });            
             return link.short_path;
         }
     };

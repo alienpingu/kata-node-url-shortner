@@ -1,7 +1,6 @@
 const Database = require("../models/database");
 const Link = require("../models/Link");
 
-
 test('list must exists', () => {
     let database1 = new Database();
     expect(database1.print()).toStrictEqual([]);
